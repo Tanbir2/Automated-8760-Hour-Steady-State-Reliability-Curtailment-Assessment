@@ -40,14 +40,17 @@ graph LR
         B2[N-0/N-1 Analysis]
         B3[Automated ACCOR Curtailment]
     end
-    
+
     subgraph C [Outputs]
         C1[Congestion Ranking]
         C2[Curtailment Logs]
         C3[Voltage Heatmaps]
     end
 
-Tech Stack
+    A --> B
+    B --> C
+
+##Tech Stack
 Simulation
 
 PSS®E (AC Power Flow & Contingency Analysis)
@@ -70,14 +73,15 @@ Matplotlib
 
 Streamlit
 
-Project Structure
+##Project Structure
 project-root
 │
 ├── data/        # AESO hourly profiles and PSS/E base cases
 ├── scripts/     # Python automation and simulation scripts
 ├── outputs/     # Generated results (curtailment logs, rankings, heatmaps)
 └── docs/        # Technical documentation
-Outputs
+
+##Outputs
 
 The framework generates:
 
@@ -91,7 +95,7 @@ Annual reliability insights
 
 These outputs help analyze how renewable generation impacts grid reliability and transmission constraints.
 
-Project Status
+##Project Status
 
  Work in Progress
 
