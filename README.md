@@ -30,28 +30,6 @@ This project performs **8760-hour AC power flow simulations** using hourly gener
 
 ## Workflow
 
-```mermaid
-graph LR
-    subgraph A [Input Layer]
-        A1[AESO Hourly Profiles]
-        A2[PSS/E Base Case]
-        A3[Mapping Tables]
-    end
-
-    subgraph B [Processing Engine]
-        B1[8760 Hourly Simulation Loop]
-        B2[N-0/N-1 Contingency Analysis]
-        B3[Automated Curtailment Logic]
-    end
-
-    subgraph C [Outputs]
-        C1[Congestion Ranking]
-        C2[Curtailment Reports]
-        C3[Voltage Heatmaps]
-    end
-
-    A --> B
-    B --> C
 
 
 ## Project Structure
